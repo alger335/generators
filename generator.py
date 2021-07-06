@@ -17,24 +17,3 @@ def gen(path):
 
 for item in gen(path):
     print(md5(item))
-
-
-
-
-
-
-
-
-
-
-# def md5(line):
-#     hash_md5 = hashlib.md5()
-#     hash_md5.update(line)
-#     # print(hash_md5.hexdigest())
-#     return hash_md5.hexdigest()
-#
-#
-# def gen(path):
-#     with open(path) as file:
-#         for line in file:
-#             yield line.upper()
