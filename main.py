@@ -11,6 +11,5 @@ if __name__ == '__main__':
 
     output_file.close()
 
-    with open('country_url.txt', "rb") as f:
-        for line in f:
-            md5(line)
+    for l in gen('country_url.txt'):
+        print(l)
